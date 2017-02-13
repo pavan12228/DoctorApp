@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fragment_pprofile_firstname_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profilepicture"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20"/>
+    <TextView
+        android:id="@+id/fragment_pprofile_firstname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fragment_pprofile_firstname_ic"
+        android:layout_alignTop="@+id/fragment_pprofile_firstname_ic"
+        android:text="@string/first_name"
+        android:layout_marginLeft="@dimen/bp_margin_3"
+        android:textColor="@color/text_black2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        android:id="@+id/fragment_pprofile_firstname_et"
+        android:layout_below="@+id/fragment_pprofile_firstname_tv"
+        android:layout_alignLeft="@+id/fragment_pprofile_firstname_tv"
+        android:layout_alignStart="@+id/fragment_pprofile_firstname_tv" />
+
+    <ImageView
+        android:id="@+id/fragment_pprofile_lastname_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profilepicture"
+        android:layout_marginTop="@dimen/bp_margin_5"
+        android:layout_alignLeft="@+id/fragment_pprofile_firstname_ic"
+        android:layout_below="@+id/fragment_pprofile_firstname_et"/>
+    <TextView
+        android:id="@+id/fragment_pprofile_lastname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fragment_pprofile_lastname_ic"
+        android:layout_alignTop="@+id/fragment_pprofile_lastname_ic"
+        android:layout_alignLeft="@+id/fragment_pprofile_firstname_et"
+        android:text="@string/last_name"
+        android:textColor="@color/text_black2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:layout_alignLeft="@+id/fragment_pprofile_lastname_tv"
+        android:layout_below="@+id/fragment_pprofile_lastname_tv"
+        android:id="@+id/fragment_pprofile_lastname_et" />
+    <ImageView
+        android:id="@+id/fragment_pprofile_firstname_edit_ic"
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_pencil"
+        android:layout_alignRight="@+id/fragment_pprofile_mobile_edit_ic"
+        android:layout_alignTop="@+id/fragment_pprofile_firstname_tv"/>
+
+    <ImageView
+        android:id="@+id/fragment_pprofile_lastname_edit_ic"
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_pencil"
+        android:layout_alignRight="@+id/fragment_pprofile_firstname_edit_ic"
+        android:layout_alignTop="@+id/fragment_pprofile_lastname_tv"/>
+    <!--this is linked with mobile edit icon-->
+    <ImageView
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_callicon"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20"
+        android:layout_marginTop="@dimen/bp_margin_5"
+        android:layout_below="@+id/fragment_pprofile_lastname_et"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fragment_pprofile_call_ic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(91) 99999999999"
+        android:textSize="@dimen/bp_margin_15"
+        android:textColor="@color/text_black2"
+        android:layout_alignTop="@+id/fragment_pprofile_call_ic"
+        android:layout_alignBottom="@+id/fragment_pprofile_call_ic"
+        android:layout_toRightOf="@+id/fragment_pprofile_call_ic"
+        android:layout_toEndOf="@+id/fragment_pprofile_call_ic"
+        android:layout_alignLeft="@+id/fragment_pprofile_lastname_et"
+        android:id="@+id/fragment_pprofile_mobile_tv" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile"
+        android:id="@+id/fragment_pprofile_mobile_et"
+        android:layout_below="@+id/fragment_pprofile_mobile_tv"
+        android:layout_alignLeft="@+id/fragment_pprofile_mobile_tv"
+        android:layout_alignStart="@+id/fragment_pprofile_mobile_tv" />
+    <ImageView
+        android:id="@+id/fragment_pprofile_mobile_edit_ic"
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_pencil"
+        android:layout_alignTop="@+id/fragment_pprofile_mobile_tv"
+        android:layout_alignRight="@+id/fragment_pprofile_mail_edit_ic"
+        android:layout_alignEnd="@+id/fragment_pprofile_mail_edit_ic" />
+    <ImageView
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_mailicon"
+        android:layout_below="@+id/fragment_pprofile_mobile_et"
+        android:layout_alignLeft="@+id/fragment_pprofile_call_ic"
+        android:layout_alignStart="@+id/fragment_pprofile_call_ic"
+        android:id="@+id/fragment_pprofile_msg_ic"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name.initial@gmail.com"
+        android:textSize="@dimen/bp_margin_15"
+        android:textColor="@color/text_black2"
+        android:layout_marginLeft="@dimen/bp_margin_5"
+        android:layout_alignStart="@+id/fragment_pprofile_mobile_tv"
+        android:layout_alignTop="@+id/fragment_pprofile_msg_ic"
+        android:layout_alignLeft="@+id/fragment_pprofile_mobile_et"
+        android:id="@+id/fragment_pprofile_mailaddress_tv"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/fragment_pprofile_mail_edit_ic"
+        android:layout_width="@dimen/bp_margin_20"
+        android:layout_height="@dimen/bp_margin_20"
+        android:src="@drawable/ic_pencil"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fragment_pprofile_mailaddress_tv"
+        android:visibility="invisible"/>
+    <EditText
+        android:id="@+id/fragment_pprofile_mail_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="personal"
+        android:layout_below="@+id/fragment_pprofile_mailaddress_tv"
+        android:layout_toRightOf="@+id/fragment_pprofile_msg_ic"
+        android:layout_toEndOf="@+id/fragment_pprofile_msg_ic"
+        android:layout_alignLeft="@+id/fragment_pprofile_mobile_tv"
+        android:layout_alignStart="@+id/fragment_pprofile_mobile_tv"
+        android:visibility="gone" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/fragmentprofile_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_32"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragment_pprofile_mail_et"
+        android:background="@drawable/roundcorner_green"
+        android:gravity="center"
+        android:text="@string/update"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginRight="@dimen/bp_margin_20"
+        android:textSize="@dimen/bp_margin_15"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+</ScrollView>

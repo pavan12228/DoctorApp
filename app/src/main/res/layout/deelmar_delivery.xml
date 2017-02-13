@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="@dimen/bp_margin_2"
+            android:src="@drawable/ic_editblackcopy"
+            android:layout_alignTop="@+id/tv_subtitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp" />
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"/>
+        <View
+            android:id="@+id/view_line"
+            android:layout_below="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="#b8b8b8"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your First name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/view_line"
+            android:layout_alignLeft="@+id/rg1"
+            android:layout_alignStart="@+id/rg1"
+            android:id="@+id/textView" />
+        <TextView
+            android:id="@+id/tv_secondname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Second name"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Address"
+            android:layout_below="@+id/tv_secondname"
+            android:layout_alignLeft="@+id/tv_secondname"
+            android:layout_alignStart="@+id/tv_secondname" />
+        <TextView
+            android:id="@+id/iv_town_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Town/city"
+            android:layout_below="@+id/tv_address"
+            android:layout_alignLeft="@+id/tv_address"
+            android:layout_alignStart="@+id/tv_address" />
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:layout_below="@+id/iv_town_city"
+            android:layout_alignLeft="@+id/iv_town_city"
+            android:layout_alignStart="@+id/iv_town_city" />
+        <TextView
+            android:id="@+id/tv_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Zipcode"
+            android:layout_below="@+id/tv_country"
+            android:layout_alignLeft="@+id/tv_country"
+            android:layout_alignStart="@+id/tv_country" />
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Mobile number"
+            android:layout_below="@+id/tv_zipcode"
+            android:layout_alignLeft="@+id/tv_zipcode"
+            android:layout_alignStart="@+id/tv_zipcode" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#03a9f4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_subtitle"
+            android:layout_alignStart="@+id/tv_subtitle"
+            android:layout_marginBottom="122dp"
+            android:id="@+id/radioButton" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:text="Building address same as delivery address"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_toRightOf="@+id/radioButton"
+            android:layout_toEndOf="@+id/radioButton" />
+    </RelativeLayout>
+</FrameLayout>

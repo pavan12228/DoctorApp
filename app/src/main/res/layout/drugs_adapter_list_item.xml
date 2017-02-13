@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/unselected"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_90"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/bp_margin_5"
+        android:elevation="@dimen/bp_margin_5"
+        android:background="@drawable/list_item_padding">
+
+        <ImageView
+            android:id="@+id/drugs_adapter_imageview"
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="@dimen/margin_100"
+            android:padding="@dimen/bp_margin_10"
+            android:scaleType="fitXY"
+            tools:src="@drawable/editprofile" />
+
+        <View
+            android:id="@+id/vertical_view"
+            android:layout_width="@dimen/bp_margin_1"
+            android:layout_height="@dimen/margin_110"
+            android:layout_toRightOf="@+id/drugs_adapter_imageview"
+            android:background="@color/hashtintedittext" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bp_margin_7"
+            android:layout_toRightOf="@+id/vertical_view">
+
+            <TextView
+                android:id="@+id/drugs_adapter_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/bp_margin_3"
+                android:text="@string/name" />
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/drugs_adapter_dosage_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/drugs_adapter_name_tv"-->
+                <!--android:padding="@dimen/bp_margin_3"-->
+                <!--android:text="@string/dosage"-->
+                <!--android:visibility="invisible"/>-->
+
+            <TextView
+                android:id="@+id/drugs_adapter_drugs_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drugs_adapter_name_tv"
+                android:padding="@dimen/bp_margin_3"
+                android:text="@string/description" />
+        </RelativeLayout>
+
+        <!--<RatingBar-->
+            <!--android:id="@+id/ratingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/bp_margin_5"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--style="?android:attr/ratingBarStyleSmall"-->
+            <!--android:numStars="5"-->
+            <!--android:stepSize="0.1"-->
+            <!--android:isIndicator="true"-->
+            <!--android:visibility="gone"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

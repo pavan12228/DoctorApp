@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/bp_margin_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bp_margin_15">
+        <TextView
+            android:id="@+id/shedule_fragment_addshedule_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_shedule"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/bp_margin_5"
+            android:textSize="@dimen/bp_margin_10"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:id="@+id/shedule_fragment_header_ll"
+            android:layout_below="@+id/shedule_fragment_addshedule_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_32"
+            android:gravity="center_vertical"
+            android:background="@color/shedule_header"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/id"
+                android:textAlignment="center"
+                android:textSize="@dimen/bp_margin_10"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text="@string/from_date"
+                android:textAlignment="center"
+                android:textSize="@dimen/bp_margin_10"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text="@string/to_date"
+                android:textAlignment="center"
+                android:textSize="@dimen/bp_margin_10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.4"
+                android:text="@string/timings"
+                android:textAlignment="center"
+                android:textSize="@dimen/bp_margin_10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/actions"
+                android:textAlignment="center"
+                android:textSize="@dimen/bp_margin_10"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shedule_fragment_header_ll"
+            android:id="@+id/shedule_fragment_listview">
+
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

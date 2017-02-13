@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="mycompany.com.doctorapp.activity.LoginActivity">
+    <ImageView
+        android:id="@+id/activitylogin_logo_iv"
+        android:layout_width="@dimen/margin_80"
+        android:layout_height="@dimen/margin_60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:src="@drawable/logoicon" />
+    <TextView
+        android:id="@+id/activitylogin_doctor_patient_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctorpatient"
+        android:textAllCaps="true"
+        android:textSize="@dimen/bp_margin_20"
+        android:textStyle="bold"
+        android:layout_below="@+id/activitylogin_logo_iv"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/flash_green"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ic_radio_left"-->
+        <!--android:layout_below="@+id/tv_doctor_patient"-->
+        <!--android:layout_width="@dimen/margin_32"-->
+        <!--android:layout_height="@dimen/margin_32"-->
+        <!--android:layout_marginTop="@dimen/bp_margin_10"-->
+        <!--android:layout_marginLeft="@dimen/bp_margin_18"-->
+        <!--android:layout_marginStart="@dimen/bp_margin_20"-->
+        <!--android:src="@drawable/ic_radiocheck" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@+id/activitylogin_doctor_patient_tv"
+        android:layout_marginLeft="@dimen/bp_margin_18"
+        android:layout_marginStart="@dimen/bp_margin_20"
+        android:layout_marginTop="@dimen/bp_margin_10">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/activitylogin_dlogin_left_rb"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/margin_32"
+                android:textSize="@dimen/bp_margin_13"
+                android:text="@string/doctor_login"
+                android:buttonTint="@color/flash_green"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/activitylogin_plogin_right_rb"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/bp_margin_13"
+                android:layout_height="@dimen/margin_32"
+                android:checked="false"
+                android:text="@string/patient_login"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/activitylogin_name_et"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_40"-->
+        <!--android:layout_below="@+id/rl1"-->
+        <!--android:layout_marginLeft="@dimen/bp_margin_20"-->
+        <!--android:layout_marginStart="@dimen/bp_margin_20"-->
+        <!--android:layout_marginRight="@dimen/bp_margin_20"-->
+        <!--android:layout_marginEnd="@dimen/bp_margin_20"-->
+        <!--android:hint="@string/name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:textSize="@dimen/bp_margin_15"-->
+        <!--android:layout_marginTop="@dimen/bp_margin_5"-->
+        <!--android:backgroundTint="@color/hashtintedittext"-->
+        <!--android:textColorHint="@color/hashedittext" />-->
+    <requestFocus/>
+    <EditText
+        android:id="@+id/activitylogin_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_below="@+id/rl1"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20"
+        android:layout_marginRight="@dimen/bp_margin_20"
+        android:layout_marginEnd="@dimen/bp_margin_20"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/bp_margin_15"
+        android:backgroundTint="@color/hashtintedittext"
+        android:textColorHint="@color/hashedittext" />
+    <EditText
+        android:id="@+id/activitylogin_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20"
+        android:layout_marginRight="@dimen/bp_margin_20"
+        android:layout_marginEnd="@dimen/bp_margin_20"
+        android:layout_below="@+id/activitylogin_email_et"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/bp_margin_15"
+        android:backgroundTint="@color/hashtintedittext"
+        android:textColorHint="@color/hashedittext"/>
+    <Button
+        android:id="@+id/activitylogin_siginin_bt"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_32"
+        android:text="@string/sign_in"
+        android:background="@color/parrot"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:layout_marginLeft="@dimen/margin_70"
+        android:layout_marginStart="@dimen/margin_70"
+        android:layout_below="@+id/activitylogin_password_et"
+        android:textSize="@dimen/bp_margin_15"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/activitylogin_signup_bt"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_32"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bp_margin_15"
+        android:background="@color/flash_green"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/activitylogin_siginin_bt"
+        android:layout_toEndOf="@+id/activitylogin_siginin_bt"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_marginStart="@dimen/bp_margin_10"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:layout_below="@+id/activitylogin_password_et"/>
+
+    <TextView
+        android:id="@+id/login_forgot_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password ?"
+        android:textSize="@dimen/bp_margin_13"
+        android:textColor="@color/colorPrimary"
+        android:padding="@dimen/bp_margin_5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/bp_margin_20"
+        android:layout_marginTop="@dimen/bp_margin_8"
+        android:layout_below="@+id/activitylogin_siginin_bt"/>
+
+    <Button
+        android:id="@+id/activitylogin_loginbygmail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20"
+        android:drawableLeft="@drawable/ic_gmail"
+        android:background="@drawable/roundcorner_red"
+        android:layout_below="@+id/activitylogin_siginin_bt"
+        android:layout_marginTop="@dimen/margin_40"
+        android:padding="@dimen/bp_margin_5"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/bp_margin_18"
+        android:textColor="@color/white"
+        android:drawablePadding="@dimen/margin_25"
+        android:text="@string/login_through_gmail"
+        android:layout_marginRight="@dimen/bp_margin_20"
+        android:layout_marginEnd="@dimen/bp_margin_20" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activitylogin_loginbygmail_tv">
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/activitylogin_loginbyfb_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bp_margin_20"
+            android:layout_marginStart="@dimen/bp_margin_20"
+            android:layout_marginRight="@dimen/bp_margin_20"
+            android:layout_marginEnd="@dimen/bp_margin_20"
+            android:drawableLeft="@drawable/ic_fb"
+            android:background="@drawable/roundcorner_blue"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:padding="@dimen/bp_margin_5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/bp_margin_18"
+            android:textColor="@color/white"
+            android:drawablePadding="@dimen/margin_25"
+            android:text="@string/login_through_facebook"/>
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/activity_login_skip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/FrameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bp_margin_10"
+        android:layout_marginBottom="@dimen/bp_margin_5"/>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

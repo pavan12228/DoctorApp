@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--&lt;!&ndash; menu is to be closed when outside of menu layout clicks &ndash;&gt;-->
+    <!--<ImageView-->
+        <!--android:id="@+id/dummy_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_70"-->
+        <!--android:background="#7fb231">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/bp_margin_15"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Doctor"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/bp_margin_18"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/activityhome_menu_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:padding="@dimen/bp_margin_5"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginEnd="@dimen/bp_margin_5"-->
+            <!--android:layout_marginRight="@dimen/bp_margin_10"-->
+            <!--android:src="@drawable/ic_menu_dots" />-->
+    <!--</RelativeLayout>-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fb231"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="@color/flash_green"
+        app:tabIndicatorHeight="@dimen/bp_margin_3"
+        app:tabMode="scrollable"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/unselected" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout">
+
+    </FrameLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/activity_home_menu_rl"-->
+        <!--android:layout_width="@dimen/margin_175"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/bp_margin_5"-->
+        <!--android:layout_marginTop="@dimen/bp_margin_15"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="@dimen/bp_margin_10"-->
+        <!--android:visibility="visible">-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/doctor_home_change_password_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/change_password"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:padding="@dimen/bp_margin_7"-->
+            <!--android:textSize="@dimen/bp_margin_15"-->
+            <!--android:layout_below="@+id/doctor_home_logout_tv"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/doctor_home_logout_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/bp_margin_7"-->
+            <!--android:text="@string/logout"-->
+            <!--android:textSize="@dimen/bp_margin_15"-->
+            <!--android:textColor="@color/black" />-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

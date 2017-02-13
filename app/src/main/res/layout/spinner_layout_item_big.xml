@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/bp_margin_7"
+    android:textSize="@dimen/bp_margin_15"
+    android:text="hello"
+    android:textColor="#666465"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingRight="?android:attr/listPreferredItemPaddingRight" />

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="@dimen/bp_margin_2"
+            android:src="@drawable/ic_editblackcopy"
+            android:layout_alignTop="@+id/tv_subtitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping options"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"/>
+        <View
+            android:id="@+id/view_line"
+            android:layout_below="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="#b8b8b8"/>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/view_line"
+            android:stretchColumns="1"
+            android:layout_margin="@dimen/bp_margin_10">
+            <TableRow android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="Name"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="Quantity"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="Price"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="Samsung Galaxy s5"
+                    android:padding="3dip"
+                    android:textColor="#b8b8b8"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="#b8b8b8"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="56,000.00"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:textColor="#b8b8b8"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="Shipping charges"
+                    android:padding="3dip"
+                    android:textColor="#b8b8b8"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="#b8b8b8"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="39,000.00"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:textColor="#b8b8b8"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+                <RadioButton
+                    android:buttonTint="#03a9f4"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6.5"
+                    android:text="Shipping charges(5-6 day)"
+                    android:padding="3dip"
+                    android:textColor="#b8b8b8"/>
+                <TextView
+                    android:text="RS:"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#b8b8b8"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="95,000"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textColor="#b8b8b8"/>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

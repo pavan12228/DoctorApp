@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/bp_margin_10">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/activitysignup_logo"
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25"
+            android:src="@drawable/logoicon" />
+
+        <TextView
+            android:id="@+id/activityhome_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activitysignup_logo"
+            android:layout_centerHorizontal="true"
+            android:text="doctor and parent"
+            android:textAllCaps="true"
+            android:textColor="@color/flash_green"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activitysignup_patient_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityhome_tv_title"
+            android:layout_marginTop="@dimen/bp_margin_15"
+            android:padding="@dimen/bp_margin_8"
+            android:text="Patient Register"
+            android:textColor="@color/flash_green"
+            android:textSize="@dimen/bp_margin_20"
+            android:textStyle="normal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activitysignup_patient_tv">
+
+            <EditText
+                android:id="@+id/activitysignup_firstname_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000001"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_firstname">
+
+            <EditText
+                android:id="@+id/activitysignup_lastname_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000001"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_lastname">
+
+            <EditText
+                android:id="@+id/activitysignup_mobilenumber_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_mobilenumber">
+
+            <EditText
+                android:id="@+id/activitysignup_emailid_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_emailid">
+
+            <EditText
+                android:id="@+id/activitylogin_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_cofirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/activitysignup_confirmpassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/conform_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/activitysignup_signup_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_32"
+            android:layout_below="@id/input_layout_cofirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_70"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:background="@drawable/roundcorner_green"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/bp_margin_15" />
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activitysignup_signup_tv"
+            android:layout_marginBottom="@dimen/bp_margin_10"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text=" YOU HAVE AN ACCOUNT"
+            android:textColor="#4b5d95"
+            android:textSize="@dimen/bp_margin_15" />
+
+        <TextView
+            android:id="@+id/activitysignup_singin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_text"
+            android:layout_marginLeft="@dimen/bp_margin_10"
+            android:layout_toRightOf="@id/tv_text"
+            android:text="SIGN IN"
+            android:textColor="#7eb131"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

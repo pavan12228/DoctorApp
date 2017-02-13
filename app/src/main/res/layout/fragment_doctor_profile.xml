@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_200"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/doctor_profile_editprofile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bp_margin_15"
+            android:drawableTop="@drawable/ic_pencil_white"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/bp_margin_15"
+            android:drawablePadding="@dimen/bp_margin_5"
+            android:padding="@dimen/bp_margin_5"/>
+
+        <ImageView
+            android:id="@+id/doctor_profile_building_iv"
+            android:layout_width="@dimen/margin_120"
+            android:layout_height="@dimen/margin_120"
+            android:layout_marginLeft="@dimen/margin_100"
+            android:src="@drawable/house_icon" />
+
+        <ImageView
+            android:id="@+id/doctor_profile_profilepic"
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_70"
+            android:layout_below="@+id/doctor_profile_building_iv"
+            android:layout_marginLeft="@dimen/bp_margin_10"
+            android:layout_marginRight="@dimen/bp_margin_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_70"
+            android:layout_below="@+id/doctor_profile_building_iv"
+            android:layout_toRightOf="@+id/doctor_profile_profilepic"
+            android:layout_marginRight="@dimen/bp_margin_15"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_doctor_profile_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Dr.N S Suresh"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/fragment_doctor_profile_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="MBBS, MD-Paediatrics"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/fragment_doctor_profile_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="20 years Experiance"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/consultation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:layout_below="@+id/relative_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/money_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/bp_margin_8"
+            android:src="@drawable/curre" />
+
+        <TextView
+            android:id="@+id/fragment_doctor_profile_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/bp_margin_8"
+            tools:text="INR 200"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bp_margin_5"
+            android:text="consultation fees" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/consultation_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bp_margin_1"
+        android:layout_below="@+id/consultation_ll"
+        android:background="@color/hashedittext" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_200"
+        android:layout_below="@+id/consultation_view">
+
+        <ImageView
+            android:id="@+id/add_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/bp_margin_8"
+            android:src="@drawable/add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_15"
+            android:layout_toRightOf="@+id/add_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_doctor_profile_hopitalname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Sai Srinivasa Child ana Eye Clinic"
+                android:textSize="@dimen/bp_margin_13"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fragment_doctor_profile_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Moti Nagar,"/>
+            <TextView
+                android:id="@+id/fragment_doctor_profile_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Landmark: Opp, Newton School"/>
+            <TextView
+                android:id="@+id/fragment_doctor_profile_near"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Near E Seva, Hyderabad"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

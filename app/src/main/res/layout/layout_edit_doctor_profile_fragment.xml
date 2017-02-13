@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/bp_margin_15">
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_175"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/edit_doctor_profile_fragment_profile_pic"
+                android:layout_width="@dimen/margin_100"
+                android:layout_height="@dimen/margin_100" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_green"
+                android:layout_alignBottom="@+id/edit_doctor_profile_fragment_profile_pic"
+                android:layout_alignRight="@+id/edit_doctor_profile_fragment_profile_pic"
+                android:layout_alignEnd="@+id/edit_doctor_profile_fragment_profile_pic"
+                android:layout_marginRight="@dimen/bp_margin_10"
+                android:layout_marginEnd="@dimen/bp_margin_10"
+                android:layout_marginBottom="@dimen/bp_margin_10" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_doctor_profile_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_field_border"
+            android:padding="@dimen/bp_margin_7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_20"
+            android:text="@string/specialization"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/edit_field_border">
+
+            <Spinner
+                android:id="@+id/edit_doctor_profile_dentist_spinner"
+                android:layout_width="match_parent"
+                android:padding="@dimen/bp_margin_7"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_20">
+
+            <TextView
+                android:id="@+id/experience_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yrs_of_experience"
+                android:textSize="@dimen/bp_margin_15"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_doctor_profile_experience_et"
+                android:layout_width="@dimen/margin_175"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/experience_tv"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/bp_margin_5"
+                android:background="@drawable/edit_field_border"
+                android:padding="@dimen/bp_margin_7" />
+
+            <TextView
+                android:id="@+id/fees_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_doctor_profile_fee_et"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/edit_doctor_profile_fee_et"
+                android:text="@string/fee"
+                android:textSize="@dimen/bp_margin_15"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_doctor_profile_fee_et"
+                android:layout_width="@dimen/margin_200"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/experience_tv"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/bp_margin_15"
+                android:layout_marginTop="@dimen/bp_margin_5"
+                android:layout_toRightOf="@+id/edit_doctor_profile_experience_et"
+                android:background="@drawable/edit_field_border"
+                android:padding="@dimen/bp_margin_7" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_20"
+            android:text="@string/hospital_clinic"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_profile_hospitalname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/edit_field_border"
+            android:padding="@dimen/bp_margin_7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_20"
+            android:text="@string/address"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_doctor_profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/edit_field_border"
+            android:padding="@dimen/bp_margin_7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_20"
+            android:text="@string/qualification"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_doctor_profile_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/edit_field_border"
+            android:padding="@dimen/bp_margin_7" />
+
+        <Button
+            android:id="@+id/edit_doctor_profile_update_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/bp_margin_20"
+            android:layout_marginBottom="@dimen/bp_margin_15"/>
+    </LinearLayout>
+
+
+</ScrollView>

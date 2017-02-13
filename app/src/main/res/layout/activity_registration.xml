@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/bp_margin_10">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/all_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25"
+            android:src="@drawable/logoicon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/doctor_and_patient"
+            android:textAllCaps="true"
+            android:textColor="@color/flash_green"
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/bp_margin_15"
+            android:padding="@dimen/bp_margin_8"
+            android:text="@string/doctor_register"
+            android:textColor="@color/flash_green"
+            android:textSize="@dimen/bp_margin_20"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/register_hospital_info_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pr"
+            android:padding="@dimen/bp_margin_8"
+            android:text="@string/hospital_information"
+            android:textColor="@color/flash_green" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_reg_no_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_hospital_info_tv">
+
+            <EditText
+                android:id="@+id/register_reg_no_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/hospital_regd_no"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000001"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_lastname_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_reg_no_input_et">
+
+            <EditText
+                android:id="@+id/register_hospital_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/name_of_the_hospital"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000001"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_lastname">
+
+            <EditText
+                android:id="@+id/register_hospital_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/hospital_address"
+                android:inputType="textPostalAddress"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/register_doctor_details_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_mobilenumber"
+            android:padding="@dimen/bp_margin_8"
+            android:text="@string/doctors_details"
+            android:textColor="@color/flash_green" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_mobilenumber">
+
+            <EditText
+                android:id="@+id/register_doctor_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#5b8d0d"
+                android:hint="@string/doctor_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/register_doctor_specialization_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/bp_margin_3">
+
+        </Spinner>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_emailid">
+
+            <EditText
+                android:id="@+id/register_experience_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/experiance"
+                android:inputType="number"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_emailid">
+
+            <EditText
+                android:id="@+id/register_qualification_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/qualification"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_cofirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_email_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_phonenumber_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_freeamount_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/free_amount"
+                android:inputType="number"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_emailid">
+
+            <EditText
+                android:id="@+id/register_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_confirmpassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="Conform Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_designation_hos_doc_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/designation_of_hospital_and_doctor"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/bp_margin_3"
+            android:text="@string/location"
+            android:textColor="@color/flash_green" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password">
+
+            <EditText
+                android:id="@+id/register_location_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:backgroundTint="#7eb131"
+                android:hint="@string/location"
+                android:padding="@dimen/bp_margin_10"
+                android:textColorHint="#000"
+                android:textSize="@dimen/bp_margin_10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/register_state_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/bp_margin_3">
+
+
+        </Spinner>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="@color/colorPrimaryDark" /> />
+
+        <Spinner
+            android:id="@+id/register_district_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/bp_margin_3">
+
+        </Spinner>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="@color/colorPrimaryDark" />/>
+        <Spinner
+            android:id="@+id/register_city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/bp_margin_3">
+
+
+        </Spinner>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_1"
+            android:background="@color/colorPrimaryDark" />/>
+        <Button
+            android:id="@+id/register_upload_profile_image_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bp_margin_20"
+            android:layout_marginRight="@dimen/bp_margin_20"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:background="#f9f9f9"
+            android:padding="@dimen/bp_margin_8"
+            android:text="@string/upload_your_profile_image"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/register_add_profile_image_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add Image"
+            android:padding="@dimen/bp_margin_8"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/appointment_listitem_padding"/>
+
+        <Button
+            android:id="@+id/register_upload_hosp_image_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bp_margin_20"
+            android:layout_marginRight="@dimen/bp_margin_20"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:background="#f9f9f9"
+            android:padding="@dimen/bp_margin_8"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/upload_your_hospital_images"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/register_add_hospital_image_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add Image"
+            android:padding="@dimen/bp_margin_8"
+            android:layout_marginTop="@dimen/bp_margin_5"
+            android:background="@drawable/appointment_listitem_padding"/>
+
+
+        <Button
+            android:id="@+id/register_signup_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_32"
+            android:layout_below="@id/input_layout_cofirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:background="@drawable/roundcorner_green"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/bp_margin_20"
+            android:layout_marginRight="@dimen/bp_margin_20"
+            android:textSize="@dimen/bp_margin_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/bp_margin_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" YOU HAVE AN ACCOUNT"
+                android:textColor="#4b5d95"
+                android:textSize="@dimen/bp_margin_15" />
+
+            <TextView
+                android:id="@+id/register_signin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textColor="#7eb131"
+                android:layout_marginLeft="@dimen/bp_margin_5"
+                android:textSize="@dimen/bp_margin_15"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_images_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150"
+        android:layout_alignBottom="@+id/all_details_layout"
+        android:background="@color/transperent_black"
+        android:layout_marginBottom="@dimen/margin_175"
+        android:visibility="visible">
+        <include layout="@layout/select_image_options" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

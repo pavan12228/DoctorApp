@@ -1,0 +1,113 @@
+<resources>
+
+    <!--<string name="facebook_app_id">1007619542682857</string>-->
+    <string name="facebook_app_id">1007619542682857</string>
+
+
+    <!--for chrome following id used-->
+    <string name="fb_login_protocol_scheme">fb1007619542682857</string>
+
+
+    <string name="app_name">DoctorApp</string>
+    <string name="doctor_login">Doctor Login</string>
+    <string name="doctorpatient"><![CDATA[doctor & patient]]></string>
+    <string name="patient_login">Patient Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login_through_gmail">Login Through Gmail</string>
+    <string name="login_through_facebook">Login Through Facebook</string>
+    <string name="dentist">Dentist</string>
+    <string name="cardiologist">Cardiologist</string>
+    <string name="ayurveda">Ayurveda</string>
+    <string name="gynecologist">Gynecologist</string>
+    <string name="dermotologist">Dermotologist</string>
+    <string name="neurologist">Neurologist</string>
+    <string name="homeopath">Homeopath</string>
+    <string name="gastro">Gastro</string>
+    <string name="general">General</string>
+    <string name="psychiatrist">Psychiatrist</string>
+    <string name="ear_nose_throat">Ear-Nose-Throat</string>
+    <string name="hospital_regd_no">Hospital Regd No</string>
+    <string name="hospital_information">Hospital Information</string>
+    <string name="doctor_register">Doctor Register</string>
+    <string name="doctor_and_patient">DOCTOR AND PATIENT</string>
+    <string name="name_of_the_hospital">Name of the Hospital</string>
+    <string name="hospital_address">Hospital Address</string>
+    <string name="doctors_details">Doctors Details</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="experiance">Experiance</string>
+    <string name="email_id">Email Id</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="free_amount">Fee Amount</string>
+    <string name="location">Location</string>
+    <string name="upload_your_hospital_images">UPLOAD YOUR HOSPITAL IMAGES</string>
+    <string name="or">(OR)</string>
+    <string name="dosage">Dosage:</string>
+    <string name="description">Description:</string>
+    <string name="regected">regected</string>
+    <string name="accept">accept</string>
+    <string name="id">id</string>
+    <string name="from_date">FROM DATE</string>
+    <string name="to_date">TO DATE</string>
+    <string name="timings">TIMINGS</string>
+    <string name="actions">ACTIONS</string>
+    <string name="add_new_shedule">Add New Shedule</string>
+    <string name="edit_shedule">EDIT SHEDULE</string>
+    <string name="from">FROM</string>
+    <string name="errormessage">Network error!</string>
+    <string name="to">TO</string>
+    <string name="time_slot">TIME SLOT</string>
+    <string name="edit">Edit</string>
+    <string name="specialization">Specialization</string>
+    <string name="yrs_of_experience">Yrs. Of Experience</string>
+    <string name="fee">Fee</string>
+    <string name="hospital_clinic">Hospital/Clinic</string>
+    <string name="address">Address</string>
+    <string name="qualification">Qualification</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="conform_password">Conform password</string>
+
+    <string name="re_schedule">RE SCHEDULE</string>
+    <string name="thu_27_aug_5_30pm">Thu,27 Aug 5:30PM</string>
+    <string name="mbbs_md">MBBS,MD</string>
+    <string name="_1_8km">1.8km</string>
+    <string name="_10_11p_m">10-11p.m</string>
+    <string name="_5_9p_m">5-9p.m</string>
+    <string name="_12_3p_m">12-3p.m</string>
+    <string name="_10_11a_m">10-11a.m</string>
+    <string name="morning">Morning</string>
+    <string name="before_12pm">before 12pm</string>
+    <string name="evening">Evening</string>
+    <string name="select_a_time_slot">Select a time slot</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About us</string>
+    <string name="speciality">speciality</string>
+    <string name="hospital_name">hospital name</string>
+    <string name="area_name">Area Name</string>
+    <string name="city">City</string>
+    <string name="change_password">Change password</string>
+    <string name="about">About</string>
+    <string name="search">search</string>
+    <string name="pick_from_common_specialties">pick from common specialties</string>
+    <string name="patientname">PatientName</string>
+    <string name="upload_your_profile_image">UPLOAD YOUR PROFILE IMAGE</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="cancel">Cancel</string>
+    <string name="designation_of_hospital_and_doctor">DESIGNATION OF HOSPITAL AND DOCTOR</string>
+    <string name="a_m">A.M.</string>
+    <string name="p_m">P.M</string>
+    <string name="skip">skip >></string>
+    <string name="book">book</string>
+    <string name="title_activity_gmail">GmailActivity</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+</resources>

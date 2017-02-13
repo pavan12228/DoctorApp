@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textpadd">10dp</dimen>
+    <dimen name="textvideochat">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="bp_margin_18">20.16dp</dimen>
+    <dimen name="bp_margin_20">22.4dp</dimen>
+    <dimen name="bp_margin_15">16.8dp</dimen>
+    <dimen name="bp_margin_13">14.56dp</dimen>
+    <dimen name="bp_margin_11">12.32dp</dimen>
+    <dimen name="bp_margin_twelve">13.34dp</dimen>
+    <dimen name="bp_margin_10">11.2dp</dimen>
+    <dimen name="bp_margin_7">7.84dp</dimen>
+    <dimen name="bp_margin_8">8.96dp</dimen>
+    <dimen name="bp_margin_minus_7">-7.84dp</dimen>
+    <dimen name="bp_margin_minus_1">-1.12dp</dimen>
+    <dimen name="bp_margin_minus_2">-2.24dp</dimen>
+    <dimen name="bp_margin_3">3.36dp</dimen>
+    <dimen name="bp_margin_5">5.6dp</dimen>
+    <dimen name="bp_margin_point5">.56dp</dimen>
+    <dimen name="bp_margin_point3">.36dp</dimen>
+    <dimen name="bp_margin_1">1.12dp</dimen>
+    <dimen name="bp_margin_2">2.24dp</dimen>
+    <dimen name="margin_25">28dp</dimen>
+    <dimen name="margin_50">56dp</dimen>
+    <dimen name="margin_55">61.6dp</dimen>
+    <dimen name="margin_45">50.4dp</dimen>
+    <dimen name="margin_42">47dp</dimen>
+    <dimen name="margin_40">44.8dp</dimen>
+    <dimen name="margin_32">35.84dp</dimen>
+    <dimen name="margin_35">39.2dp</dimen>
+    <dimen name="margin_70">78.4dp</dimen>
+    <dimen name="margin_63">70.56dp</dimen>
+    <dimen name="margin_60">67.2dp</dimen>
+    <dimen name="margin_65">72.8dp</dimen>
+    <dimen name="margin_67">75.04dp</dimen>
+    <dimen name="margin_80">89.6dp</dimen>
+    <dimen name="margin_90">100.8dp</dimen>
+    <dimen name="margin_110">123dp</dimen>
+    <dimen name="margin_100">112dp</dimen>
+    <dimen name="margin_120">134.4dp</dimen>
+    <dimen name="margin_150">168dp</dimen>
+    <dimen name="margin_175">196dp</dimen>
+    <dimen name="margin_188">210dp</dimen>
+    <dimen name="margin_200">224dp</dimen>
+    <dimen name="margin_225">252dp</dimen>
+    <dimen name="margin_250">280dp</dimen>
+    <dimen name="button_text_size">16.8dp</dimen>
+
+    <dimen name="mainHeadingSize">20sp</dimen>
+    <dimen name="heading2">16.6sp</dimen>
+    <dimen name="heading3">13.3sp</dimen>
+    <dimen name="requlartext">10sp</dimen>
+    <dimen name="good_textsize">28sp</dimen>
+    <dimen name="statics_textsize">24sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+
+</resources>

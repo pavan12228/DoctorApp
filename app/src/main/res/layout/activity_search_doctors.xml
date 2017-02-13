@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hashbackground">
+    <include layout="@layout/commontoolbar_back_title_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activitysearchdoctors_includetoolbar"/>
+    <ListView
+        android:id="@+id/activitysearchdoctors_listview"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_marginRight="@dimen/bp_margin_10"
+        android:layout_marginTop="@dimen/bp_margin_10"
+        android:layout_below="@+id/activitysearchdoctors_includetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</RelativeLayout>

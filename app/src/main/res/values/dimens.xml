@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="bp_margin_18">18dp</dimen>
+    <dimen name="bp_margin_20">20dp</dimen>
+    <dimen name="bp_margin_15">15dp</dimen>
+    <dimen name="bp_margin_13">13dp</dimen>
+    <dimen name="bp_margin_11">11dp</dimen>
+    <dimen name="bp_margin_twelve">12dp</dimen>
+    <dimen name="bp_margin_10">10dp</dimen>
+    <dimen name="bp_margin_7">7dp</dimen>
+    <dimen name="bp_margin_8">8dp</dimen>
+    <dimen name="bp_margin_minus_7">-7dp</dimen>
+    <dimen name="bp_margin_minus_1">-1dp</dimen>
+    <dimen name="bp_margin_minus_2">-2dp</dimen>
+    <dimen name="bp_margin_5">5dp</dimen>
+    <dimen name="bp_margin_point5">.5dp</dimen>
+    <dimen name="bp_margin_point3">.3dp</dimen>
+    <dimen name="bp_margin_1">1dp</dimen>
+    <dimen name="bp_margin_2">2dp</dimen>
+    <dimen name="bp_margin_3">3dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_42">42dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_63">63dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_67">67dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_175">175dp</dimen>
+    <dimen name="margin_188">188dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_225">225dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+
+    <dimen name="button_text_size">15dp</dimen>
+
+    <dimen name="mainHeadingSize">17.85sp</dimen>
+    <dimen name="heading2">14.82sp</dimen>
+    <dimen name="heading3">11.87sp</dimen>
+    <dimen name="requlartext">8.9sp</dimen>
+    <dimen name="good_textsize">22.32sp</dimen>
+    <dimen name="statics_textsize">21.42sp</dimen>
+</resources>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+    <TextView
+        android:id="@+id/fragmenthome_speciality_tv"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_25"
+        android:textSize="@dimen/bp_margin_10"
+        android:textColor="@color/flash_green"
+        android:text="@string/speciality"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/bp_margin_15"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:background="@drawable/linecorner_left"/>
+
+    <TextView
+        android:id="@+id/fragmenthome_hospitalname_tv"
+        android:layout_toRightOf="@+id/fragmenthome_location_tv"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_25"
+        android:layout_alignTop="@+id/fragmenthome_location_tv"
+        android:gravity="center"
+        android:text="@string/hospital_name"
+        android:textSize="@dimen/bp_margin_10"
+        android:textAllCaps="true"
+        android:textColor="@color/flash_green"
+        android:layout_marginRight="@dimen/bp_margin_10"
+        android:background="@drawable/linecorner_right"/>
+    <EditText
+        android:id="@+id/fragmenthome_edittext1"
+        android:layout_below="@+id/fragmenthome_speciality_tv"
+        android:layout_width="@dimen/margin_110"
+        android:layout_marginTop="@dimen/bp_margin_10"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:paddingLeft="@dimen/bp_margin_10"
+        android:drawableLeft="@drawable/ic_search_12_black"
+        android:textSize="@dimen/bp_margin_10"
+        android:layout_height="@dimen/margin_32"
+        android:background="@drawable/linecorner_hash"
+        android:hint="@string/area_name"/>
+    <EditText
+        android:id="@+id/fragmenthome_edittext2"
+        android:layout_toRightOf="@+id/fragmenthome_edittext1"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_32"
+        android:layout_alignTop="@+id/fragmenthome_edittext1"
+        android:paddingLeft="@dimen/bp_margin_10"
+        android:drawableLeft="@drawable/ic_search_12_black"
+        android:drawableStart="@drawable/ic_search_12_black"
+        android:hint="@string/city"
+        android:textSize="@dimen/bp_margin_10"
+        android:background="@drawable/linecorner_hash"/>
+    <TextView
+        android:layout_toRightOf="@+id/fragmenthome_edittext2"
+        android:layout_toEndOf="@+id/fragmenthome_edittext2"
+        android:layout_alignTop="@+id/fragmenthome_edittext2"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_32"
+        android:text="@string/search"
+        android:textSize="@dimen/bp_margin_10"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/stroke_border"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/bp_margin_10"
+        android:id="@+id/fragmenthome_search_tv" />
+    <View
+        android:id="@+id/view_1"
+        android:layout_below="@+id/fragmenthome_edittext1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_marginStart="@dimen/bp_margin_10"
+        android:layout_marginRight="@dimen/bp_margin_10"
+        android:layout_marginEnd="@dimen/bp_margin_10"
+        android:layout_height="@dimen/bp_margin_1"
+        android:layout_marginTop="@dimen/bp_margin_10"
+        android:background="#e5e5e5"/>
+    <TextView
+        android:id="@+id/tv_common_specialties"
+        android:layout_below="@+id/view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bp_margin_5"
+        android:text="@string/pick_from_common_specialties"
+        android:textSize="@dimen/bp_margin_15"
+        android:layout_marginLeft="@dimen/bp_margin_15"
+        android:layout_marginStart="@dimen/bp_margin_15"
+        android:textColor="@color/text_black" />
+    <View
+        android:id="@+id/view_2"
+        android:layout_below="@+id/tv_common_specialties"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_marginStart="@dimen/bp_margin_10"
+        android:layout_marginRight="@dimen/bp_margin_10"
+        android:layout_marginEnd="@dimen/bp_margin_10"
+        android:layout_height="@dimen/bp_margin_1"
+        android:layout_marginTop="@dimen/bp_margin_5"
+        android:background="#e5e5e5"/>
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_dentist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:layout_below="@+id/view_2"
+        android:layout_alignLeft="@+id/tv_common_specialties"
+        android:layout_alignStart="@+id/tv_common_specialties"
+        android:layout_marginLeft="@dimen/bp_margin_15"
+        android:layout_marginStart="@dimen/bp_margin_15"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:id="@+id/fragmenthome_dentist_iv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dentist"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_marginStart="@dimen/bp_margin_10"
+        android:layout_marginTop="@dimen/bp_margin_5"
+        android:layout_below="@+id/fragmenthome_dentist_iv"
+        android:layout_alignLeft="@+id/fragmenthome_dentist_iv"
+        android:layout_alignStart="@+id/fragmenthome_dentist_iv"
+        android:id="@+id/tv_dentist" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_cardialagist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_cardiologist_iv"
+        android:layout_alignTop="@+id/fragmenthome_dentist_iv"
+        android:layout_toLeftOf="@+id/fragmenthome_ayurveda_iv"
+        android:layout_toStartOf="@+id/fragmenthome_ayurveda_iv"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cardiologist"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/tv_cardiologist"
+        android:layout_alignTop="@+id/tv_dentist"
+        android:layout_alignLeft="@+id/fragmenthome_cardiologist_iv"
+        android:layout_alignStart="@+id/fragmenthome_cardiologist_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_ayurveda"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_ayurveda_iv"
+        android:layout_alignTop="@+id/fragmenthome_cardiologist_iv"
+        android:layout_toLeftOf="@+id/fragmenthome_search_tv"
+        android:layout_toStartOf="@+id/fragmenthome_search_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayurveda"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignLeft="@+id/fragmenthome_ayurveda_iv"
+        android:layout_alignStart="@+id/fragmenthome_ayurveda_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_gynecologist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_gynocologist_iv"
+        android:layout_alignTop="@+id/fragmenthome_ayurveda_iv"
+        android:layout_alignLeft="@+id/fragmenthome_search_tv"
+        android:layout_alignStart="@+id/fragmenthome_search_tv"
+        android:layout_marginLeft="@dimen/bp_margin_20"
+        android:layout_marginStart="@dimen/bp_margin_20" />
+        android:layout_marginStart="@dimen/bp_margin_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gynecologist"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/tv_cardiologist"
+        android:layout_alignLeft="@+id/fragmenthome_gynocologist_iv"
+        android:layout_alignStart="@+id/fragmenthome_gynocologist_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_dermotologist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:layout_marginTop="@dimen/bp_margin_20"
+        android:id="@+id/fragmenthome_dermo_iv"
+        android:layout_below="@+id/tv_dentist"
+        android:layout_alignLeft="@+id/fragmenthome_dentist_iv"
+        android:layout_alignStart="@+id/fragmenthome_dentist_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_neurologist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_neurologist_iv"
+        android:layout_alignTop="@+id/fragmenthome_dermo_iv"
+        android:layout_alignLeft="@+id/tv_cardiologist"
+        android:layout_alignStart="@+id/tv_cardiologist" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_homeopath"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_homeopath_iv"
+        android:layout_alignTop="@+id/fragmenthome_neurologist_iv"
+        android:layout_toLeftOf="@+id/fragmenthome_gynocologist_iv"
+        android:layout_toStartOf="@+id/fragmenthome_gynocologist_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_gastro"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_gastro_iv"
+        android:layout_alignTop="@+id/fragmenthome_homeopath_iv"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dermotologist"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/fragmenthome_dermo_iv"
+        android:layout_alignLeft="@+id/fragmenthome_dermo_iv"
+        android:layout_alignStart="@+id/fragmenthome_dermo_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neurologist"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:layout_marginLeft="@dimen/bp_margin_5"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/fragmenthome_neurologist_iv"
+        android:layout_alignLeft="@+id/fragmenthome_neurologist_iv"
+        android:layout_alignStart="@+id/fragmenthome_neurologist_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homeopath"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:layout_marginLeft="@dimen/bp_margin_5"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignLeft="@+id/fragmenthome_homeopath_iv"
+        android:layout_alignStart="@+id/fragmenthome_homeopath_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gastro"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView9"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignLeft="@+id/fragmenthome_gastro_iv"
+        android:layout_alignStart="@+id/fragmenthome_gastro_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_general"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:layout_marginTop="@dimen/margin_25"
+        android:id="@+id/fragmenthome_general_iv"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/fragmenthome_dermo_iv"
+        android:layout_alignEnd="@+id/fragmenthome_dermo_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_phychiartist"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_psych_iv"
+        android:layout_alignTop="@+id/fragmenthome_general_iv"
+        android:layout_alignRight="@+id/fragmenthome_neurologist_iv"
+        android:layout_alignEnd="@+id/fragmenthome_neurologist_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:src="@drawable/ic_ear_nose_throat"
+        android:padding="@dimen/bp_margin_10"
+        android:background="@drawable/circle"
+        android:id="@+id/fragmenthome_ear_nose_throat_iv"
+        android:layout_alignTop="@+id/fragmenthome_psych_iv"
+        android:layout_alignLeft="@+id/fragmenthome_homeopath_iv"
+        android:layout_alignStart="@+id/fragmenthome_homeopath_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView10"
+        android:layout_marginLeft="@dimen/bp_margin_10"
+        android:layout_below="@+id/fragmenthome_general_iv"
+        android:layout_alignLeft="@+id/fragmenthome_general_iv"
+        android:layout_alignStart="@+id/fragmenthome_general_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/psychiatrist"
+        android:layout_marginLeft="@dimen/bp_margin_5"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignLeft="@+id/fragmenthome_psych_iv"
+        android:layout_alignStart="@+id/fragmenthome_psych_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ear_nose_throat"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/bp_margin_8"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/fragmenthome_ear_nose_throat_iv"
+        android:layout_alignLeft="@+id/fragmenthome_ear_nose_throat_iv"
+        android:layout_alignStart="@+id/fragmenthome_ear_nose_throat_iv" />
+
+    <TextView
+        android:id="@+id/fragmenthome_location_tv"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_25"
+        android:text="@string/location"
+        android:textSize="@dimen/bp_margin_10"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/square"
+        android:layout_alignBaseline="@+id/fragmenthome_speciality_tv"
+        android:layout_alignBottom="@+id/fragmenthome_speciality_tv"
+        android:layout_toRightOf="@+id/fragmenthome_speciality_tv"
+        android:layout_toEndOf="@+id/fragmenthome_speciality_tv" />
+
+</RelativeLayout>
+</ScrollView>

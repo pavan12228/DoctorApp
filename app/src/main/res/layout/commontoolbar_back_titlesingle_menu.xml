@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/parrot">
+
+        <ImageView
+            android:id="@+id/commontoolbarbacktitlesinglemenu_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/bp_margin_11"
+            android:src="@drawable/ic_backicon" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/bp_margin_10"
+            android:layout_toRightOf="@+id/commontoolbarbacktitlesinglemenu_back_iv"
+            android:text="@string/select_a_time_slot"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/bp_margin_15"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/bp_margin_5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/bp_margin_5"
+            android:layout_marginRight="@dimen/bp_margin_5"
+            android:src="@drawable/ic_menu_dots" />
+
+    </RelativeLayout>
+</FrameLayout>

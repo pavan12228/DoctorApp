@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/bp_margin_2"
+        android:background="@drawable/elevationborder"
+        android:padding="@dimen/bp_margin_8">
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/bp_margin_11"
+            android:layout_marginStart="@dimen/bp_margin_11"
+            android:layout_marginTop="@dimen/bp_margin_10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bp_margin_13"
+            tools:text="Dr.L Jayanthi reddy" />
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_address_tv"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inflatordoctorlist_name_tv"
+            android:layout_alignStart="@+id/inflatordoctorlist_name_tv"
+            android:layout_below="@+id/inflatordoctorlist_name_tv"
+            android:textColor="@color/hashedittext"
+            android:textSize="@dimen/bp_margin_13"
+            tools:text="JJ hospital Kalyan nagar" />
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_feedummy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inflatordoctorlist_address_tv"
+            android:layout_alignStart="@+id/inflatordoctorlist_address_tv"
+            android:layout_below="@+id/inflatordoctorlist_address_tv"
+            android:text="Rs"
+            android:textColor="@color/hashedittext"
+            android:textSize="@dimen/bp_margin_13" />
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_fee_tv"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inflatordoctorlist_feedummy_tv"
+            android:layout_toEndOf="@+id/inflatordoctorlist_feedummy_tv"
+            android:layout_toRightOf="@+id/inflatordoctorlist_feedummy_tv"
+            android:textColor="@color/hashedittext"
+            android:textSize="@dimen/bp_margin_13"
+            tools:text="@string/_1_8km" />
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_km_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inflatordoctorlist_fee_tv"
+            android:layout_toRightOf="@+id/inflatordoctorlist_fee_tv"
+            android:text="hi"
+            android:textColor="@color/hashedittext"
+            android:textSize="@dimen/bp_margin_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inflatordoctorlist_fee_tv"
+            android:layout_marginLeft="@dimen/bp_margin_1"
+            android:layout_toEndOf="@+id/inflatordoctorlist_km_tv"
+            android:layout_toRightOf="@+id/inflatordoctorlist_km_tv"
+            android:textColor="@color/hashedittext"
+            android:textSize="@dimen/bp_margin_13"
+            tools:text="km" />
+
+        <TextView
+            android:id="@+id/inflatordoctorlist_book_tv"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/bp_margin_20"
+            android:layout_alignBottom="@+id/inflatordoctorlist_address_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:background="@drawable/allroundcorners"
+            android:gravity="center"
+            android:text="@string/book"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_10"
+            android:layout_below="@+id/inflatordoctorlist_fee_tv"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bp_margin_10"
+            android:layout_below="@+id/view2" />
+    </RelativeLayout>
+</RelativeLayout>

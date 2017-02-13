@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bp_margin_8"
+        android:layout_margin="@dimen/bp_margin_7"
+        android:background="@drawable/appointment_listitem_padding">
+        <TextView
+            android:id="@+id/appointment_adapter_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bp_margin_15"
+            android:textStyle="bold"
+            tools:text="santhu.initial@gmail.com"/>
+        <TextView
+            android:id="@+id/appointment_adapter_mobile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appointment_adapter_email_tv"
+            android:text="Mobile"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.30"
+            android:layout_below="@+id/appointment_adapter_mobile_tv"
+            android:id="@+id/appointment_adapter_time_tv" />
+        <TextView
+            android:id="@+id/status_dummy"
+            android:layout_below="@+id/appointment_adapter_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status :"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/appointment_adapter_status"
+            android:layout_toRightOf="@+id/status_dummy"
+            android:layout_marginLeft="@dimen/bp_margin_5"
+            android:layout_below="@+id/appointment_adapter_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status :" />
+        <TextView
+            android:layout_width="@dimen/margin_70"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/bp_margin_3"
+            android:textColor="@color/white"
+            android:text="@string/cancel"
+            android:layout_alignBottom="@+id/appointment_adapter_time_tv"
+            android:layout_alignParentRight="true"
+            android:id="@+id/appointment_adapter_cancel_tv" />
+        <TextView
+            android:layout_width="@dimen/margin_70"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"
+            android:padding="@dimen/bp_margin_3"
+            android:background="@color/colorPrimary"
+            android:layout_alignTop="@+id/appointment_adapter_cancel_tv"
+            android:layout_toLeftOf="@+id/appointment_adapter_cancel_tv"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/bp_margin_10"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>
